@@ -1,0 +1,29 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<Blog>
+<br />
+<br />
+<br />
+<div class="con-top">
+    <h3>GeziPro - Taitl & Seyahat Bloğuma Hoşgeldiniz!</h3>
+    <p>
+        Bu projeye 2023 Temmuz ayında başladım.Hala devam etmekte ve sürekli güncellemekteyim.Gezip gördüğüm yerleri sizlerle paylaşmak için kodlamasını tamamen ben yaptığım
+        Mvc5 üzerine kurulu dinamik bir web projesi geliştirdik.Hem Türkiye den hem de yurtdışından gezip gördüğüm yerleri blog yazıları halinde sizlerle paylaşma niyetindeyim.Umuyorum ki yazdıkları beğenir ve okursunuz.İyi ve Keyifli Okumalar diliyorum.
+    </p>
+</div>
+<div class="con-bot">
+    @foreach (var x in Model)
+    {
+        <div class="left">
+            <div class="bot-left">
+                <img src="@x.BlogImage" alt="" style="width:300px; height:150px;" />
+            </div>
+            <div class="left-text">
+                <h4>@x.Baslik</h4>
+                <span class="doller">@x.Tarih.ToString("dd.MM.yyyy")</span>
+                <p>@x.Aciklama.Substring(0, 80)</p>
+                <p><a href="/Blog/BlogDetay/@x.ID"><span class="read">Devamını Oku</span></a></p>
+            </div>
+        </div>
+    }
+</div>
+@Html.Action("Partial2", "Default")

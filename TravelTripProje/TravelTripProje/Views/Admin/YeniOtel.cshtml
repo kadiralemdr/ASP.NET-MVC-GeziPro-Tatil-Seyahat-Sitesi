@@ -1,0 +1,23 @@
+﻿@model TravelTripProje.Models.Siniflar.Oteller
+@{
+    ViewBag.Title = "YeniOtel";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Yeni Otel Ekleme</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.Baslik)
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Konum)
+    @Html.TextBoxFor(x => x.Konum, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.OtelImage)
+    @Html.TextBoxFor(x => x.OtelImage, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Otel Ekle</button>
+</form>
+
+
+

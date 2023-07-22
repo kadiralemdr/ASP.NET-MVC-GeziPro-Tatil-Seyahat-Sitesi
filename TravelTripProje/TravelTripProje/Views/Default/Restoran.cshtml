@@ -1,0 +1,44 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<AnaSayfa>
+@{
+    ViewBag.Title = "Restoran";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<div class="wrap">
+    <h2>Popüler Restoranlar</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th style="width:25%;"><b>Mekan</b></th>
+            <th style="width:25%;"><b>Yer</b></th>
+            <th><b>Mekan'a Ait Görseller</b></th>
+        </tr>
+        <tr>
+            <td>Cem Sultan Bedesteni Restaurant</td>
+            <td>Meydan - Kastamonu</td>
+            <td><img src="https://media-cdn.tripadvisor.com/media/photo-s/13/18/d4/de/550-yillik-tarih.jpg" style="width:600px; height:250px;" /></td>
+        </tr>
+        <tr>
+            <td>Kırcalar Kuyu Kebabı</td>
+            <td>Kırcalar Mevki - Kastamonu</td>
+            <td><img src="https://media-cdn.tripadvisor.com/media/photo-p/15/13/04/e9/photo0jpg.jpg" style="width:600px; height:250px;" /></td>
+        </tr>
+        <tr>
+            <td>Münire Sultan Sofrası</td>
+            <td>Meydan - Kastamonu</td>
+            <td><img src="https://media-cdn.tripadvisor.com/media/photo-p/1b/b7/eb/ba/photo1jpg.jpg" style="width:600px; height:250px;" /></td>
+        </tr>
+        <tr>
+            <td>Çınar Altı Kafe</td>
+            <td>Bozkurt İlişi Mevki - Kastamonu</td>
+            <td><img src="https://fastly.4sqi.net/img/general/600x600/578418006_kbTe81Wa0QuGPGG_qirgxJ7UDkSdoFj4d0GYg8rJekg.jpg" style="width:600px; height:250px;" /></td>
+        </tr>
+        <tr>
+            <td>Kastamonu Âlâ Restaurant</td>
+            <td>Meydan - Kastamonu</td>
+            <td><img src="https://media-cdn.tripadvisor.com/media/photo-s/19/09/f9/91/kastamonu-ala-restaurant.jpg" style="width:600px; height:250px;" /></td>
+        </tr>
+    </table>
+</div>
+
+

@@ -1,0 +1,25 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<iletisim>
+@{
+    ViewBag.Title = "iletisim";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<div class="wrap">
+    <h2>Bizimle İletişime Geçin</h2>
+    <label>Ad Soyad</label>
+    <input type="text" name="AdSoyad" placeholder="Ad Soyad" class="form-control" />
+    <br />
+    <label>Mail</label>
+    <input type="text" name="Mail" placeholder="Mail" class="form-control" />
+    <br />
+    <label>Konu</label>
+    <input type="text" name="Konu" placeholder="Konu" class="form-control" />
+    <br />
+    <label>Mesaj</label>
+    <textarea rows="10" cols="50" name="mesaj" placeholder="Mesajınız..." class="form-control"></textarea>
+    <br />
+    <button class="btn btn-primary" type="submit">Gönder</button>
+</div>
+<br />
+
